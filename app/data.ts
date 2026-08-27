@@ -1,5 +1,5 @@
 export const clinic = {
-  name: "Aarogya Family Clinic",
+  name: "Nanhe Kadam Child Clinic",
   phoneDisplay: "+91 00000 00000",
   phone: "+910000000000",
   email: "hello@yourclinic.example",
@@ -8,15 +8,18 @@ export const clinic = {
 };
 
 export const services = [
-  { slug: "general-consultation", title: "General consultation", short: "A considered first step for new symptoms, ongoing concerns and everyday health questions.", icon: "01" },
-  { slug: "preventive-care", title: "Preventive care", short: "Conversations and check-ups focused on understanding risk and supporting long-term wellbeing.", icon: "02" },
-  { slug: "follow-up-care", title: "Follow-up care", short: "Structured reviews to discuss progress, clarify next steps and keep your care plan current.", icon: "03" },
+  { slug: "baby-health-check", title: "Baby Health Check", short: "Baby ki sehat, growth aur aapke sawalon par aasaan baat-cheet.", icon: "👶" },
+  { slug: "vaccination-guidance", title: "Vaccination Guidance", short: "Teekakaran schedule samajhne aur agla kadam jaanne mein madad.", icon: "🛡️" },
+  { slug: "common-childhood-illness", title: "Common Illness Care", short: "Bukhar, khaansi ya pet ki aam pareshaani ke liye doctor consultation.", icon: "🩺" },
+  { slug: "growth-nutrition", title: "Growth & Nutrition", short: "Bachche ki growth, khaana aur poshan se jude sawalon ke liye salah.", icon: "🌱" },
 ];
 
 export const faqs = [
-  { q: "How do I book an appointment?", a: "Use the online appointment form or call the clinic. The clinic team will confirm the available date and time with you." },
-  { q: "What should I bring to my consultation?", a: "Bring a photo ID and any relevant prescriptions, test reports or prior medical records. Please avoid sharing sensitive medical details through the website form." },
-  { q: "Can I choose a preferred appointment time?", a: "Yes. Select a preferred date and time in the form. This is a request until the clinic confirms availability." },
-  { q: "Is walk-in consultation available?", a: "Walk-in availability has not been confirmed. Booking ahead is recommended so the clinic can plan your visit." },
-  { q: "What happens after I submit the form?", a: "The clinic team will use your contact details only to respond to your enquiry and arrange the next step." },
+  { q: "Appointment kaise book karein?", a: "Book Appointment button dabaiye, chhota form bhariye, ya clinic ko phone kariye. Team samay confirm karegi." },
+  { q: "Clinic aate samay kya laayein?", a: "Bachche ka vaccination card, purani prescription aur test reports saath laayein. Form mein private medical details na likhein." },
+  { q: "Kya main apna pasand ka samay chun sakta hoon?", a: "Haan. Din aur samay chuniye. Appointment clinic ke confirmation ke baad pakka hoga." },
+  { q: "Kya bina appointment aa sakte hain?", a: "Walk-in ki jankari abhi confirm nahi hai. Aane se pehle phone ya online booking karein." },
+  { q: "Form bharne ke baad kya hoga?", a: "Clinic team aapko phone karke appointment ka din aur samay confirm karegi." },
 ];
+
+

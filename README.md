@@ -1,4 +1,4 @@
-# Aarogya Family Clinic website
+# Nanhe Kadam Child Clinic website
 
 A production-oriented premium clinic website built with Next.js-compatible Vinext, TypeScript and Tailwind CSS.
 
@@ -15,3 +15,4 @@ Use Node.js 22.13 or newer. Run `npm install`, then `npm run dev`. Create a prod
 ## Content and safety
 
 The current copy makes no claims about qualifications, outcomes, experience, ratings or patient counts. The site states clearly that web content is not medical advice and that appointment requests are not for emergencies.
+
