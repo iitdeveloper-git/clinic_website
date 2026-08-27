@@ -23,3 +23,10 @@ export const faqs = [
 ];
 
 
+
+export const doctors = [
+  { slug:"doctor-one", name:"Doctor 1 — Name Pending", role:"Child-care doctor details pending", initials:"D1", color:"#dbeeff", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
+  { slug:"doctor-two", name:"Doctor 2 — Name Pending", role:"Child-care doctor details pending", initials:"D2", color:"#fff0d7", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
+  { slug:"doctor-three", name:"Doctor 3 — Name Pending", role:"Child-care doctor details pending", initials:"D3", color:"#e5f5e8", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
+];
+
