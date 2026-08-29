@@ -1,32 +1,26 @@
-export const clinic = {
-  name: "Nanhe Kadam Child Clinic",
-  phoneDisplay: "+91 00000 00000",
-  phone: "+910000000000",
-  email: "hello@yourclinic.example",
-  address: "Clinic address, neighbourhood, city, state — PIN",
-  hours: "Clinic timings to be confirmed",
+export const clinic={
+ name:"Women’s Health Clinic",
+ phoneDisplay:"+91 00000 00000",
+ phone:"+910000000000",
+ email:"hello@yourclinic.example",
+ address:"Clinic address, neighbourhood, city, state — PIN",
+ hours:"Clinic timings to be confirmed",
 };
-
-export const services = [
-  { slug: "baby-health-check", title: "Baby Health Check", short: "Baby ki sehat, growth aur aapke sawalon par aasaan baat-cheet.", icon: "👶" },
-  { slug: "vaccination-guidance", title: "Vaccination Guidance", short: "Teekakaran schedule samajhne aur agla kadam jaanne mein madad.", icon: "🛡️" },
-  { slug: "common-childhood-illness", title: "Common Illness Care", short: "Bukhar, khaansi ya pet ki aam pareshaani ke liye doctor consultation.", icon: "🩺" },
-  { slug: "growth-nutrition", title: "Growth & Nutrition", short: "Bachche ki growth, khaana aur poshan se jude sawalon ke liye salah.", icon: "🌱" },
+export const services=[
+ {slug:"womens-wellness",title:"Women’s Wellness Consultation",short:"Routine concerns, preventive guidance and a private space to discuss your health.",icon:"✦"},
+ {slug:"pregnancy-care",title:"Pregnancy Consultation",short:"Clear, stage-appropriate guidance during pregnancy, based on individual clinical assessment.",icon:"♡"},
+ {slug:"menstrual-pcos-care",title:"Menstrual & PCOS Care",short:"Consultation for cycle concerns and symptoms that may need professional evaluation.",icon:"◉"},
+ {slug:"fertility-counselling",title:"Fertility Counselling",short:"A respectful first conversation about fertility questions and possible next steps.",icon:"∞"},
+ {slug:"menopause-care",title:"Menopause Care",short:"Supportive consultation for symptoms and health questions during the menopause transition.",icon:"☼"},
+ {slug:"preventive-screening",title:"Preventive Screening Guidance",short:"Personalised discussion about appropriate screening based on age, history and clinical need.",icon:"✓"},
 ];
-
-export const faqs = [
-  { q: "Appointment kaise book karein?", a: "Book Appointment button dabaiye, chhota form bhariye, ya clinic ko phone kariye. Team samay confirm karegi." },
-  { q: "Clinic aate samay kya laayein?", a: "Bachche ka vaccination card, purani prescription aur test reports saath laayein. Form mein private medical details na likhein." },
-  { q: "Kya main apna pasand ka samay chun sakta hoon?", a: "Haan. Din aur samay chuniye. Appointment clinic ke confirmation ke baad pakka hoga." },
-  { q: "Kya bina appointment aa sakte hain?", a: "Walk-in ki jankari abhi confirm nahi hai. Aane se pehle phone ya online booking karein." },
-  { q: "Form bharne ke baad kya hoga?", a: "Clinic team aapko phone karke appointment ka din aur samay confirm karegi." },
+export const faqs=[
+ {q:"How do I book an appointment?",a:"Choose a service, preferred date and time on the booking page. The clinic team will call to confirm availability."},
+ {q:"Will my consultation be private?",a:"The website is designed around confidential, respectful care. Final privacy practices must be confirmed with the clinic before launch."},
+ {q:"What should I bring to the clinic?",a:"Bring relevant prescriptions, reports and a list of current medicines. Do not upload or type sensitive medical details into the public form."},
+ {q:"Can I choose a preferred time?",a:"Yes. Select an available-looking time slot as your preference. The appointment is final only after clinic confirmation."},
+ {q:"Is this website for emergencies?",a:"No. Do not use the website or appointment form for emergencies. Contact local emergency services immediately."},
 ];
-
-
-
-export const doctors = [
-  { slug:"doctor-one", name:"Doctor 1 — Name Pending", role:"Child-care doctor details pending", initials:"D1", color:"#dbeeff", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
-  { slug:"doctor-two", name:"Doctor 2 — Name Pending", role:"Child-care doctor details pending", initials:"D2", color:"#fff0d7", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
-  { slug:"doctor-three", name:"Doctor 3 — Name Pending", role:"Child-care doctor details pending", initials:"D3", color:"#e5f5e8", qualification:"Verified qualification to be added", experience:"Verified experience to be added", registration:"Registration number to be added", availability:"Clinic timing to be confirmed" },
+export const doctors=[
+ {slug:"lead-gynecologist",name:"Doctor Name — To Be Shared",role:"Consultant Gynecologist — verified specialty pending",initials:"DR",color:"#dce7ff",qualification:"Verified qualifications to be added",experience:"Verified experience to be added",registration:"Medical registration number to be added",availability:"Consultation timings to be confirmed"},
 ];
-
