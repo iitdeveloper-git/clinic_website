@@ -74,3 +74,13 @@ a,.button,button,summary{cursor:pointer}
 .gyn-process{background:linear-gradient(180deg,#fff,#f6f9fe)}
 @media(max-width:900px){.gyn-header{position:relative}.gyn-header nav{display:none}.clinic-logo-panel img{padding:2rem!important}}
 @media(max-width:600px){.gyn-header{height:72px;padding-inline:14px}.gyn-header>.button{display:none}.sampurna-brand strong{font-size:1rem}.gyn-process ol{gap:10px;background:transparent}.gyn-process li{border:1px solid #e1e8f2;border-top:3px solid #1557d6;border-radius:8px}.float-contact{border-width:2px}}
+
+/* Light, responsive medical design inspired by the supplied layout */
+.gyn-quick>a:nth-child(1){background:#dff0fb}.gyn-quick>a:nth-child(2){background:#ddf1ea;color:#10214c}.gyn-quick>a:nth-child(3){background:#eee6fa}.gyn-quick>a:nth-child(2) small,.gyn-quick>a:nth-child(2) span{color:#60768f}
+.gyn-services{position:relative}.gyn-services:before{content:"";position:absolute;inset:45px -100vw 0;background:#f4f7fb;z-index:-1}
+.condition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.condition-grid article{padding:30px;border:1px solid #e0e8f2;border-radius:14px;background:linear-gradient(145deg,#fff,#f5f8fc);box-shadow:0 12px 28px rgba(15,45,90,.06)}.condition-grid h2{font-size:22px;margin:0 0 12px}.condition-grid p{color:#667892;line-height:1.7;margin:0}
+.resource-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.resource-layout>div{position:relative;min-height:460px;border-radius:18px;overflow:hidden}.resource-layout img{object-fit:cover}.resource-layout h2{font-size:38px}.resource-layout li{margin:12px 0;color:#5f718b;line-height:1.6}.resource-layout .button{margin-top:20px}
+.real-gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}.real-gallery>div{position:relative;min-height:420px;border-radius:18px;overflow:hidden}.real-gallery img{object-fit:cover}
+.map-placeholder{background:linear-gradient(135deg,#e1eff9,#ece7f8)!important;gap:12px!important;align-content:center}.map-placeholder span{font-family:var(--font-sans);font-size:11px!important}.map-placeholder strong{max-width:600px;font-size:24px}.map-placeholder a{font-family:var(--font-sans)!important;font-size:14px!important;font-weight:800;color:#1557d6}
+@media(max-width:900px){.condition-grid{grid-template-columns:1fr 1fr}.resource-layout{grid-template-columns:1fr}.real-gallery{grid-template-columns:1fr}.resource-layout>div,.real-gallery>div{min-height:360px}}
+@media(max-width:600px){.condition-grid{grid-template-columns:1fr}.condition-grid article{padding:24px}.resource-layout{gap:30px}.resource-layout>div,.real-gallery>div{min-height:280px}.map-placeholder strong{font-size:19px}.gyn-quick>a{padding:22px 18px}}
