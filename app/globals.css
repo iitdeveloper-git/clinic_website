@@ -48,3 +48,29 @@ body{background:#f8fbff;color:var(--ink)}.top-note{background:#0755bd;color:whit
 .clinic-logo-panel img{object-fit:contain!important;padding:2rem}
 .profile-logo{border-radius:50%;object-fit:cover;background:#fff;box-shadow:0 12px 35px rgba(16,55,110,.16);margin-bottom:1rem}
 @media(max-width:650px){.sampurna-brand small{display:none}.sampurna-brand img{width:46px;height:46px}.clinic-logo-panel img{padding:1rem}}
+
+/* Professional interaction and visual polish */
+a,.button,button,summary{cursor:pointer}
+.gyn-header{position:sticky;top:0;z-index:80;border-bottom:1px solid #e7edf7;box-shadow:0 8px 30px rgba(16,43,82,.06)}
+.gyn-header nav a{position:relative;padding:28px 0}
+.gyn-header nav a:after{content:"";position:absolute;left:0;right:100%;bottom:19px;height:2px;background:#1557d6;transition:right .2s ease}
+.gyn-header nav a:hover:after,.gyn-header nav a:focus-visible:after{right:0}
+.button{box-shadow:0 10px 24px rgba(21,87,214,.18);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.button:hover,.button:focus-visible{transform:translateY(-2px);box-shadow:0 15px 32px rgba(21,87,214,.26)}
+.float-contact svg{width:29px;height:29px;fill:currentColor;display:block}
+.float-contact{isolation:isolate;border:3px solid rgba(255,255,255,.92)}
+.phone-float{background:linear-gradient(145deg,#1688ff,#0754c9)}
+.whatsapp-float{background:linear-gradient(145deg,#2dde70,#159447)}
+.gyn-service-grid>a,.pathway-grid a,.gyn-quick>a{position:relative;overflow:hidden}
+.gyn-service-grid>a:hover,.gyn-service-grid>a:focus-visible{transform:translateY(-7px);box-shadow:0 22px 45px rgba(15,47,101,.14);border-color:#9db9ed}
+.gyn-service-grid>a.featured:hover{transform:translateY(-18px)}
+.gyn-process li{position:relative;border-top:3px solid transparent;transition:.2s}
+.gyn-process li:hover{border-top-color:#1557d6;background:#f7faff}
+.clinic-logo-panel{display:grid;place-items:center;border-radius:2px;box-shadow:-20px 20px 0 #1557d6,0 28px 65px rgba(20,45,85,.12)}
+.clinic-logo-panel img{object-fit:contain!important;object-position:center!important;padding:3.5rem!important;filter:saturate(.92) contrast(1.03)}
+.doctor-photo.clinic-logo-panel img{padding:2.5rem!important}
+.contact-grid>.button{align-self:center;justify-self:start}
+.gyn-dark{background:radial-gradient(circle at 85% 15%,rgba(34,91,190,.22),transparent 34%),linear-gradient(135deg,#061126,#0b1833)}
+.gyn-process{background:linear-gradient(180deg,#fff,#f6f9fe)}
+@media(max-width:900px){.gyn-header{position:relative}.gyn-header nav{display:none}.clinic-logo-panel img{padding:2rem!important}}
+@media(max-width:600px){.gyn-header{height:72px;padding-inline:14px}.gyn-header>.button{display:none}.sampurna-brand strong{font-size:1rem}.gyn-process ol{gap:10px;background:transparent}.gyn-process li{border:1px solid #e1e8f2;border-top:3px solid #1557d6;border-radius:8px}.float-contact{border-width:2px}}
