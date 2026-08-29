@@ -1,26 +1,27 @@
 export const clinic={
- name:"Women’s Health Clinic",
- phoneDisplay:"+91 00000 00000",
- phone:"+910000000000",
- email:"hello@yourclinic.example",
- address:"Clinic address, neighbourhood, city, state — PIN",
- hours:"Clinic timings to be confirmed",
+ name:"Sampurna Clinic",
+ nameHindi:"सम्पूर्ण क्लिनिक",
+ phoneDisplay:"Phone number to be shared",
+ phone:"",
+ email:"Email to be shared",
+ address:"Gyanpur Dehat, beside Primary School, Gyanpur, Bhadohi, Uttar Pradesh",
+ hours:"Consultation timings to be shared",
 };
 export const services=[
- {slug:"womens-wellness",title:"Women’s Wellness Consultation",short:"Routine concerns, preventive guidance and a private space to discuss your health.",icon:"✦"},
- {slug:"pregnancy-care",title:"Pregnancy Consultation",short:"Clear, stage-appropriate guidance during pregnancy, based on individual clinical assessment.",icon:"♡"},
- {slug:"menstrual-pcos-care",title:"Menstrual & PCOS Care",short:"Consultation for cycle concerns and symptoms that may need professional evaluation.",icon:"◉"},
- {slug:"fertility-counselling",title:"Fertility Counselling",short:"A respectful first conversation about fertility questions and possible next steps.",icon:"∞"},
- {slug:"menopause-care",title:"Menopause Care",short:"Supportive consultation for symptoms and health questions during the menopause transition.",icon:"☼"},
- {slug:"preventive-screening",title:"Preventive Screening Guidance",short:"Personalised discussion about appropriate screening based on age, history and clinical need.",icon:"✓"},
+ {slug:"gynecology-consultation",title:"Gynecology Consultation",short:"Periods, pelvic discomfort, hormonal concerns and women’s health questions discussed with privacy and care.",icon:"✦"},
+ {slug:"pregnancy-care",title:"Pregnancy & Maternity Care",short:"Stage-appropriate antenatal guidance and follow-up planning based on individual clinical assessment.",icon:"♡"},
+ {slug:"infertility-consultation",title:"Infertility Consultation",short:"A respectful first consultation for fertility concerns, evaluation planning and clearly explained next steps.",icon:"∞"},
+ {slug:"menstrual-pcos-care",title:"Menstrual & PCOS Care",short:"Consultation for irregular periods, cycle-related symptoms and concerns that may need evaluation.",icon:"◉"},
+ {slug:"menopause-care",title:"Menopause Care",short:"Support for symptoms and preventive health questions during the menopause transition.",icon:"☼"},
+ {slug:"preventive-womens-health",title:"Preventive Women’s Health",short:"Personalised discussion about check-ups and screening based on age, history and clinical need.",icon:"✓"},
 ];
 export const faqs=[
- {q:"How do I book an appointment?",a:"Choose a service, preferred date and time on the booking page. The clinic team will call to confirm availability."},
- {q:"Will my consultation be private?",a:"The website is designed around confidential, respectful care. Final privacy practices must be confirmed with the clinic before launch."},
- {q:"What should I bring to the clinic?",a:"Bring relevant prescriptions, reports and a list of current medicines. Do not upload or type sensitive medical details into the public form."},
- {q:"Can I choose a preferred time?",a:"Yes. Select an available-looking time slot as your preference. The appointment is final only after clinic confirmation."},
- {q:"Is this website for emergencies?",a:"No. Do not use the website or appointment form for emergencies. Contact local emergency services immediately."},
+ {q:"Appointment kaise book karein?",a:"Booking page par naam, mobile, service, date aur preferred time bharein. Clinic team availability confirm karegi."},
+ {q:"Clinic kahan hai?",a:"Sampurna Clinic, Gyanpur Dehat, Primary School ke bagal mein, Gyanpur, Bhadohi, Uttar Pradesh."},
+ {q:"Doctor ki qualification kya hai?",a:"Uploaded clinic letterhead ke anusar Dr. Kanchan — PGDMHC, IMS-B.H.U.; women’s health, maternity and infertility care."},
+ {q:"Consultation ke liye kya saath laayein?",a:"Relevant prescriptions, reports aur current medicines ki list laayein. Public form mein sensitive medical details upload na karein."},
+ {q:"Kya website emergency ke liye hai?",a:"Nahi. Emergency mein website form ka use na karein; turant local emergency service ya nearest hospital se sampark karein."},
 ];
 export const doctors=[
- {slug:"lead-gynecologist",name:"Doctor Name — To Be Shared",role:"Consultant Gynecologist — verified specialty pending",initials:"DR",color:"#dce7ff",qualification:"Verified qualifications to be added",experience:"Verified experience to be added",registration:"Medical registration number to be added",availability:"Consultation timings to be confirmed"},
+ {slug:"dr-kanchan",name:"Dr. Kanchan",role:"Women’s Health, Maternity & Infertility Care",initials:"DK",color:"#e9eef8",qualification:"PGDMHC, IMS-B.H.U.",experience:"Experience details to be shared",registration:"Medical registration number to be shared",availability:"Consultation timings to be shared"},
 ];

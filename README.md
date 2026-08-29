@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌸 Women’s Health Clinic
+# 🌸 Sampurna Clinic
 
 ### Private care. Clear guidance. Every stage.
 
@@ -119,8 +119,9 @@ Most shared content is maintained in `app/data.ts`.
 
 <div align="center">
 
-**Women’s Health Clinic** · Designed and developed by **IITDEVELOPER**
+**Sampurna Clinic** · Designed and developed by **IITDEVELOPER**
 
 [🌐 Live Website](https://aarogya-family-clinic.rk1918.chatgpt.site) · [📂 Source Code](https://github.com/iitdeveloper-git/clinic_website)
 
 </div>
+
