@@ -11,7 +11,7 @@ export default function Home() {
     <section className="v001-hero">
       <div className="v001-hero-copy">
         <p className="v001-kicker">Women’s health • Gyanpur, Bhadohi</p>
-        <h1>Expert women’s healthcare you can rely on.</h1>
+        <h1>Advanced care for women. <em>Personalized for you.</em></h1>
         <p className="v001-lead">Respectful, private consultations for gynecology, maternity and fertility concerns at Sampurna Clinic.</p>
         <div className="v001-actions"><Link className="button" href="/appointment">Book an Appointment</Link><Link className="v001-link" href="/about">About the Clinic →</Link></div>
         <div className="v001-trust"><span>✓ Private consultation</span><span>✓ Clearly explained care</span></div>
