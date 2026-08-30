@@ -1,15 +1,62 @@
 import Image from "next/image";
 import Link from "next/link";
-import {CTA,Footer,Header} from "./components";
-import {doctors,faqs,services} from "./data";
-export default function Home(){const doctor=doctors[0];return <><Header/><main className="gyn-home">
-<section className="gyn-hero"><div className="gyn-hero-slider" aria-hidden="true"><Image className="hero-slide hero-slide-one" src="/gynecology-consultation-hero.png" alt="" fill priority sizes="100vw"/><Image className="hero-slide hero-slide-two" src="/maternity-consultation.png" alt="" fill sizes="100vw"/><Image className="hero-slide hero-slide-three" src="/womens-clinic-reception.png" alt="" fill sizes="100vw"/></div><div className="gyn-hero-overlay"/><div className="gyn-hero-copy"><p className="eyebrow">Sampurna Clinic • Gyanpur, Bhadohi</p><h1>Thoughtful care for <em>every stage of women’s health.</em></h1><p>Private consultations for women’s health, maternity and infertility concerns with Dr. Kanchan.</p><div><Link className="button" href="/appointment">Book an Appointment →</Link><Link href="/contact">⌖ Gyanpur, Bhadohi</Link></div></div><div className="hero-corner">Sampurna Clinic<br/><strong>Women’s Health Care</strong></div></section>
-<section className="gyn-quick"><Link href="/appointment"><span>01</span><div><b>Book Appointment</b><small>Choose a date and time</small></div><i>→</i></Link><Link href="/doctors/dr-kanchan"><span>02</span><div><b>Doctor Profile</b><small>Dr. Kanchan</small></div><i>→</i></Link><Link href="/contact"><span>03</span><div><b>Clinic Information</b><small>Gyanpur, Bhadohi</small></div><i>→</i></Link></section>
-<section className="gyn-section gyn-services"><div className="gyn-section-head"><div><p className="eyebrow">How we can help</p><h2>Women’s health services—simple language, respectful care.</h2></div><Link href="/services">View All Services →</Link></div><div className="gyn-service-grid">{services.slice(0,3).map((s,i)=><Link className={i===1?"featured":""} href={`/services/${s.slug}`} key={s.slug}><span>{s.icon}</span><small>0{i+1}</small><h3>{s.title}</h3><p>{s.short}</p><b>Learn More →</b></Link>)}</div></section>
-<section className="gyn-doctor-section"><div className="gyn-doctor-image clinic-logo-panel"><Image src="/sampurna-clinic-logo.png" alt="Sampurna Clinic Gyanpur Bhadohi logo" fill sizes="(max-width:900px) 100vw, 45vw"/></div><div><p className="eyebrow">Meet the doctor</p><h2>Dr. Kanchan at Sampurna Clinic.</h2><p>Uploaded clinic details identify Dr. Kanchan for women’s health, maternity and infertility care. Registration number, experience and timings will be added after verification.</p><div className="doctor-fact-list"><span><b>Qualification</b>{doctor.qualification}</span><span><b>Speciality</b>{doctor.role}</span><span><b>Location</b>Gyanpur, Bhadohi</span></div><Link className="button" href={`/doctors/${doctor.slug}`}>View Doctor Profile →</Link></div></section>
-<section className="gyn-dark"><div><p className="eyebrow">Care pathways</p><h2>Care for different stages of women’s health.</h2><p>Every consultation begins with your concerns and relevant history. Advice, examination, investigations or referral depend on an individual clinical assessment.</p><Link href="/services">Explore Services →</Link></div><div className="pathway-grid">{services.map((s,i)=><Link href={`/services/${s.slug}`} key={s.slug}><span>{String(i+1).padStart(2,"0")}</span><b>{s.title}</b></Link>)}</div></section>
-<section className="gyn-process gyn-section"><div className="gyn-section-head"><div><p className="eyebrow">Your visit</p><h2>A simple journey from appointment to consultation.</h2></div></div><ol><li><span>01</span><h3>Request</h3><p>Choose a service, preferred date and time.</p></li><li><span>02</span><h3>Confirm</h3><p>The clinic team confirms availability.</p></li><li><span>03</span><h3>Consult</h3><p>Discuss your concern in a private setting.</p></li><li><span>04</span><h3>Next Step</h3><p>Receive clearly explained next steps after assessment.</p></li></ol></section>
-<section className="gyn-faq gyn-section"><div><p className="eyebrow">Frequently asked</p><h2>Helpful answers before your visit.</h2><p>Clear information helps make your clinic visit easier and more comfortable.</p><Link href="/faq">View All FAQs →</Link></div><div>{faqs.slice(0,4).map((f,i)=><details key={f.q} open={i===0}><summary>{f.q}<span>+</span></summary><p>{f.a}</p></details>)}</div></section>
-<CTA/></main><Footer/></>}
+import { CTA, Footer, Header } from "./components";
+import { doctors, services } from "./data";
 
+const careImages = ["/female-reproductive-system.png", "/maternity-consultation.png", "/gynecology-consultation-hero.png"];
 
+export default function Home() {
+  const doctor = doctors[0];
+  return <><Header/><main className="clinic-v001">
+    <section className="v001-hero">
+      <div className="v001-hero-copy">
+        <p className="v001-kicker">Women’s health • Gyanpur, Bhadohi</p>
+        <h1>Expert women’s healthcare you can rely on.</h1>
+        <p className="v001-lead">Respectful, private consultations for gynecology, maternity and fertility concerns at Sampurna Clinic.</p>
+        <div className="v001-actions"><Link className="button" href="/appointment">Book an Appointment</Link><Link className="v001-link" href="/about">About the Clinic →</Link></div>
+        <div className="v001-trust"><span>✓ Private consultation</span><span>✓ Clearly explained care</span></div>
+      </div>
+      <div className="v001-hero-art">
+        <Image src="/gynecology-consultation-hero.png" alt="Gynecology consultation in a modern women’s health clinic" fill priority sizes="(max-width: 900px) 100vw, 50vw"/>
+        <div className="v001-badge v001-badge-doctor"><b>Dr. Kanchan</b><small>Women’s Health Care</small></div>
+        <div className="v001-badge v001-badge-clinic"><span>✦</span><b>Sampurna Clinic</b><small>Gyanpur, Bhadohi</small></div>
+      </div>
+    </section>
+
+    <section className="v001-about">
+      <div>
+        <p className="v001-kicker">About us</p><h2>Professional care dedicated to women’s health.</h2>
+        <p>From routine concerns to maternity and fertility discussions, each visit begins by listening carefully and understanding your individual needs.</p>
+        <ul><li><b>Patient-centred care</b><span>Your concerns guide the consultation.</span></li><li><b>Respectful and private</b><span>A comfortable setting for personal conversations.</span></li><li><b>Clear next steps</b><span>Assessment and options explained in simple language.</span></li></ul>
+        <Link className="button" href="/about">More About Sampurna Clinic</Link>
+      </div>
+      <div className="v001-collage"><div className="v001-collage-main"><Image src="/maternity-consultation.png" alt="Maternity consultation with a gynecologist" fill sizes="(max-width: 900px) 100vw, 45vw"/></div><div className="v001-collage-small"><Image src="/womens-clinic-reception.png" alt="Welcoming women’s clinic reception" fill sizes="220px"/></div><div className="v001-hours"><b>Clinic location</b><span>Gyanpur, Bhadohi</span><Link href="/contact">Get directions →</Link></div></div>
+    </section>
+
+    <section className="v001-services">
+      <header><p className="v001-kicker">Our services</p><h2>Comprehensive care for every stage.</h2><p>Consultation plans are based on individual assessment, relevant history and clinical needs.</p></header>
+      <div className="v001-service-grid">{services.slice(0,3).map((service,index)=><Link href={`/services/${service.slug}`} key={service.slug}><div className="v001-service-title"><span>{service.icon}</span><b>{service.title}</b><i>→</i></div><p>{service.short}</p><div className="v001-service-image"><Image src={careImages[index]} alt="" fill sizes="(max-width: 700px) 100vw, 30vw"/></div></Link>)}</div>
+      <Link className="button" href="/services">View All Services</Link>
+    </section>
+
+    <section className="v001-why">
+      <div className="v001-why-copy"><div><p className="v001-kicker">Why choose us</p><h2>Thoughtful care built around your comfort.</h2></div><ul><li>Appointments designed to reduce unnecessary waiting.</li><li>Private discussion of personal health concerns.</li><li>Individual assessment before recommendations.</li><li>Clear guidance for the next step in care.</li></ul></div>
+      <div className="v001-trust-image"><Image src="/womens-clinic-reception.png" alt="Sampurna Clinic care team supporting patients" fill sizes="(max-width: 900px) 100vw, 1120px"/><div className="v001-trust-shade"/><div className="v001-proof"><span><b>Private</b><small>Consultations</small></span><span><b>Personal</b><small>Assessment</small></span><span><b>Clear</b><small>Next steps</small></span></div></div>
+    </section>
+
+    <section className="v001-doctor">
+      <header><p className="v001-kicker">Meet the doctor</p><h2>Experienced care you can trust.</h2><p>Clinic details identify Dr. Kanchan as the consulting doctor for women’s health, maternity and infertility care.</p></header>
+      <div className="v001-doctor-card"><div className="v001-doctor-photo"><Image src="/sampurna-clinic-logo.png" alt="Sampurna Clinic logo" fill sizes="300px"/></div><div><span>Consulting Gynecologist</span><h3>Dr. Kanchan</h3><p>{doctor.qualification}</p><p>{doctor.role}</p><small>The doctor’s approved portrait, registration number and final consultation timings will be added after clinic verification.</small><div className="v001-actions"><Link className="button" href={`/doctors/${doctor.slug}`}>View Doctor Profile</Link><Link className="v001-link" href="/appointment">Book Appointment →</Link></div></div></div>
+    </section>
+
+    <section className="v001-numbers">
+      <header><p className="v001-kicker">Care, explained</p><h2>Women’s health support in one welcoming place.</h2></header>
+      <div className="v001-mosaic"><article className="v001-mosaic-text"><span>01</span><h3>Understand your concern</h3><p>A consultation starts with your symptoms, history and questions.</p><Link href="/services">Explore care →</Link></article><div className="v001-mosaic-wide"><Image src="/maternity-consultation.png" alt="Doctor explaining maternity care" fill sizes="(max-width: 700px) 100vw, 50vw"/></div><div className="v001-mosaic-image"><Image src="/female-pelvic-floor.png" alt="Educational illustration of the female pelvic floor" fill sizes="(max-width: 700px) 100vw, 35vw"/></div><article className="v001-mosaic-note"><span>02</span><h3>Know when to seek help</h3><p>Persistent pain, unusual bleeding, cycle changes or pregnancy concerns deserve professional assessment.</p><Link href="/blog">Read health guidance →</Link></article></div>
+    </section>
+
+    <section className="v001-assurance"><header><p className="v001-kicker">Our patient promise</p><h2>Trust is earned with honest, respectful care.</h2></header><div><article><span>★★★★★</span><h3>Verified feedback only</h3><p>Patient reviews will be published only after the clinic provides a verified source and consent.</p></article><article><span>●</span><h3>Privacy matters</h3><p>Personal health information is handled carefully throughout the appointment journey.</p></article><article><span>✓</span><h3>No false claims</h3><p>Doctor credentials and clinic facts are displayed only after they are confirmed.</p></article></div></section>
+
+    <section className="v001-updates"><header><p className="v001-kicker">Health updates</p><h2>Helpful women’s health information.</h2></header><div><Link href="/blog"><div><Image src="/female-pelvic-floor.png" alt="Pelvic health educational illustration" fill sizes="33vw"/></div><small>Pelvic health</small><h3>When should you speak with a gynecologist?</h3><span>Read more →</span></Link><Link href="/services/pregnancy-maternity-care"><div><Image src="/maternity-consultation.png" alt="Pregnancy consultation" fill sizes="33vw"/></div><small>Pregnancy care</small><h3>Preparing for a comfortable maternity consultation</h3><span>Read more →</span></Link><Link href="/services/menstrual-pcos-care"><div><Image src="/female-reproductive-system.png" alt="Female reproductive system educational illustration" fill sizes="33vw"/></div><small>Menstrual health</small><h3>Understanding cycle changes and PCOS concerns</h3><span>Read more →</span></Link></div></section>
+    <CTA/>
+  </main><Footer/></>;
+}
