@@ -10,6 +10,13 @@ const serviceImages = [
   "/female-pelvic-floor.png",
 ];
 
+const amenities = [
+  {title:"Reception & Registration",text:"A clear arrival and registration process before consultation.",image:"/womens-clinic-reception.png"},
+  {title:"Comfortable Waiting Area",text:"A calm space for patients and accompanying family members.",image:"/clinic-reception-v2.png"},
+  {title:"Private Consultation",text:"Personal health concerns are discussed in a respectful clinical setting.",image:"/sampurna-womens-consultation-v2.png"},
+  {title:"Maternity Guidance",text:"Consultation and follow-up planning for pregnancy-related concerns.",image:"/sampurna-maternity-care-v2.png"},
+];
+
 export default function Home() {
   const doctor = doctors[0];
   return <><Header/><main className="v003-home">
@@ -27,6 +34,17 @@ export default function Home() {
     <section className="v003-signature">
       <header><p className="v003-kicker">Focused women’s health services</p><h2>Clinical support built around your needs.</h2></header>
       <div>{services.slice(0,4).map((service,index)=><Link href={`/services/${service.slug}`} key={service.slug}><span>{service.icon}</span><h3>{service.title}</h3><p>{service.short}</p><b>Learn more →</b></Link>)}</div>
+    </section>
+
+    <section className="v003-welcome">
+      <div><p className="v003-kicker">Welcome to Sampurna Clinic</p><h2>Women’s healthcare guided by listening, clarity and respect.</h2></div>
+      <div><p>Sampurna Clinic supports women seeking consultation for gynecology, menstrual health, pregnancy, maternity and fertility-related concerns. Every visit begins with relevant history and an individual clinical assessment by Dr. Kanchan.</p><p>Advice, examination, investigations or referral may be recommended according to clinical need. This website helps patients understand consultation pathways and request a convenient appointment.</p><Link className="v003-button secondary" href="/about">Explore the Clinic</Link></div>
+    </section>
+
+    <section className="v003-amenities">
+      <header><p className="v003-kicker">The clinic experience</p><h2>Comfort and privacy through every step.</h2><p>See the spaces and consultation experience patients can expect when visiting Sampurna Clinic.</p></header>
+      <div>{amenities.map((item)=><article key={item.title}><div><Image src={item.image} alt={`${item.title} at Sampurna Clinic`} fill sizes="(max-width:700px) 100vw, 25vw"/></div><span>Clinic facility</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+      <Link className="v003-button secondary" href="/facilities">View Clinic Facilities</Link>
     </section>
 
     <section className="v003-story">
@@ -47,6 +65,11 @@ export default function Home() {
     <section className="v003-doctor">
       <div className="v003-doctor-image"><Image src="/sampurna-clinic-logo.png" alt="Sampurna Clinic logo" fill sizes="380px"/></div>
       <article><p className="v003-kicker">Meet the consulting doctor</p><h2>Dr. Kanchan</h2><h3>{doctor.role}</h3><p>{doctor.qualification}</p><p>Clinic-provided details identify Dr. Kanchan for women’s health, maternity and infertility-related consultation. The approved doctor portrait, registration number and exact timings will be published after verification.</p><div className="v003-actions"><Link className="v003-button" href={`/doctors/${doctor.slug}`}>View Doctor Profile</Link><Link className="v003-button secondary" href="/appointment">Request Appointment</Link></div></article>
+    </section>
+
+    <section className="v003-care-list">
+      <div><p className="v003-kicker">Areas of consultation</p><h2>Comprehensive support for women’s health concerns.</h2><p>These topics describe the clinic’s consultation scope. Diagnosis and treatment recommendations are made only after an individual medical assessment.</p></div>
+      <ul><li>Gynecology consultation</li><li>Pregnancy and antenatal guidance</li><li>Menstrual health concerns</li><li>PCOS-related consultation</li><li>Fertility and infertility concerns</li><li>Menopause support</li><li>Pelvic discomfort assessment</li><li>Preventive women’s health guidance</li><li>Pre- and post-delivery follow-up</li><li>Contraception counselling</li><li>Screening guidance</li><li>Referral planning when required</li></ul>
     </section>
 
     <section className="v003-journey">
